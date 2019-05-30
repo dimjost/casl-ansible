@@ -31,14 +31,14 @@ The CASL Ansible tools also enable you to provision an OpenShift cluster on stat
 === External Dependencies
 For some tasks, CASL Ansible has dependencies on external repositories:
 
-link:https://github.com/redhat-cop/infra-ansible[Infra Ansible]::
+link:https://github.com/dimjost/infra-ansible[Infra Ansible]::
   A repository of Ansible automation for generic infrastructure components.
-link:https://github.com/openshift/openshift-ansible[OpenShift Ansible]::
+link:https://github.com/dimjost/openshift-ansible[OpenShift Ansible]::
   The core OpenShift Installation Playbooks including the supporting roles.
-link:https://github.com/openshift/openshift-ansible-contrib[OpenShift Ansible Contrib]::
+link:https://github.com/dimjost/openshift-ansible-contrib[OpenShift Ansible Contrib]::
   A repository of extra, unsupported, and upstream Ansible roles and playbooks for OpenShift.
 
 NOTE: The dependencies are managed using `ansible-galaxy` and the specific instructions will call this out when there is a need to use galaxy to pull in the correct dependencies.
 
 === Automation of OpenShift Cluster Content
-The link:https://github.com/redhat-cop/openshift-applier[openshift-applier] is used to automate the seeding of OpenShift cluster content based on OpenShift templates and parameters files.
+The link:https://github.com/dimjost/openshift-applier[openshift-applier] is used to automate the seeding of OpenShift cluster content based on OpenShift templates and parameters files.

@@ -14,7 +14,7 @@ In addition to _cloning this repo_, you'll need the following:
 
 ```
 cd ~/src/
-git clone https://github.com/redhat-cop/casl-ansible.git
+git clone https://github.com/dimjost/casl-ansible.git
 ```
 
 * Run `ansible-galaxy` to pull in the necessary requirements for the CASL provisioning of OpenShift on OpenStack:
@@ -76,7 +76,7 @@ docker run -u `id -u` \
 
 > **Note 2:** The above bind-mounts will map files and source directories to the correct locations within the control host container. Update the local paths per your environment for a successful run.
 
-Done! Wait till the provisioning completes and you should have an operational OpenShift cluster. If something fails along the way, either update your inventory and re-run the above `end-to-end.yml` playbook, or it may be better to [delete the cluster](https://github.com/redhat-cop/casl-ansible#deleting-a-cluster) and re-start.
+Done! Wait till the provisioning completes and you should have an operational OpenShift cluster. If something fails along the way, either update your inventory and re-run the above `end-to-end.yml` playbook, or it may be better to [delete the cluster](https://github.com/dimjost/casl-ansible#deleting-a-cluster) and re-start.
 
 ## Updating a Cluster
 

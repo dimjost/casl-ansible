@@ -6,7 +6,7 @@
 # OpenShift Cluster provisioning
 #
 # Please check out the OpenShift Applier repo for more details:
-#   https://github.com/redhat-cop/openshift-applier
+#   https://github.com/dimjost/openshift-applier
 # 
 
 openshift_cluster_content:

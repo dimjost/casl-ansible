@@ -30,11 +30,11 @@ A provisioning run should be split into four (4) phases as represented in our [e
   - Installing/configuring the container runtime, including container storage devices
   - Installing prerequisite packages
   - Updating packages (and rebooting hosts)
-3. _Install_ runs the normal openshift installation playbook using [openshift-ansible](https://github.com/openshift/openshift-ansible.git). This means that any features of the native openshift installer are available to use with CASL provisioning. (see [OpenShift Ansible Integration](#openshift-ansible-integration) below)
+3. _Install_ runs the normal openshift installation playbook using [openshift-ansible](https://github.com/dimjost/openshift-ansible.git). This means that any features of the native openshift installer are available to use with CASL provisioning. (see [OpenShift Ansible Integration](#openshift-ansible-integration) below)
 4. _Post Install_ covers any additional configurations or deployments that we would like to have happen that isn't provided by the native installer. This can include:
   - Syncing additional administrator SSH keys (typically a cloud provider only provisions a single key)
   - Creating a set of demo users (when using the `HTPassswordIdentityProvider`)
-  - Creation of any sort of OpenShift resources using the [openshift-applier](https://github.com/redhat-cop/openshift-applier.git) automation framework.
+  - Creation of any sort of OpenShift resources using the [openshift-applier](https://github.com/dimjost/openshift-applier.git) automation framework.
 
 Some principles we try to adhere to with all of these phases include the following.
 
@@ -45,7 +45,7 @@ Some principles we try to adhere to with all of these phases include the followi
 
 ## OpenShift Ansible integration
 
-CASL-Ansible provisioning is intended to be a complement (and in some cases an upstream) to the [openshift-ansible](https://github.com/openshift/openshift-ansible.git) repo. As such, we intend for the CASL tools to support all of the features and capabilities of the openshift-ansible cluster deployment playbook. The aim is to use CASL to provision and prepare infrastructure and then hand off to the [deploy_cluster](https://github.com/openshift/openshift-ansible/blob/master/playbooks/deploy_cluster.yml) playbook for the installation of OpenShift.
+CASL-Ansible provisioning is intended to be a complement (and in some cases an upstream) to the [openshift-ansible](https://github.com/dimjost/openshift-ansible.git) repo. As such, we intend for the CASL tools to support all of the features and capabilities of the openshift-ansible cluster deployment playbook. The aim is to use CASL to provision and prepare infrastructure and then hand off to the [deploy_cluster](https://github.com/dimjost/openshift-ansible/blob/master/playbooks/deploy_cluster.yml) playbook for the installation of OpenShift.
 
 ## Ansible Inventory Structure
 

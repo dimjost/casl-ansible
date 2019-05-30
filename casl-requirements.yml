@@ -3,14 +3,14 @@
 # and also support any role dependency while using the repository in Ansible Tower
 
 # From 'infra-ansible'
-- src: https://github.com/redhat-cop/infra-ansible
-  version: v1.0.8
+- src: https://github.com/dimjost/infra-ansible
+  version: master
 
 # From 'openshift-applier'
-- src: https://github.com/redhat-cop/openshift-applier
-  version: v2.0.8
+- src: https://github.com/dimjost/openshift-applier
+  version: master
 
 # From 'openshift-ansible'
-- src: https://github.com/openshift/openshift-ansible
+- src: https://github.com/dimjost/openshift-ansible
   version: release-3.11
 
